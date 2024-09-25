@@ -7,7 +7,7 @@ import os
 import glob
 import numpy as np
 import pandas as pd
-from main_process import load_audio, compute_energy, compute_avg_energy, extract_f0, extract_formants, determine_tone
+from audio_processing import load_audio, compute_energy, compute_avg_energy, extract_f0, extract_formants, determine_tone
 
 def process_audio(filepath):
     y, sr = load_audio(filepath)
